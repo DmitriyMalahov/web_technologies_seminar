@@ -13,14 +13,10 @@
 // Советую округлить значение после расчетов, так как в некоторых случаях 
 // может получиться "длинная дробь".
 
-function CelsiusToFahrenheit(tempCelsius) {
-    tempFahrenheit = (9 / 5) * tempCelsius + 32
-    return tempFahrenheit
+function celsiusToFahrenheit(tempCelsius) {
+    return (9 / 5) * tempCelsius + 32;
 }
 
 const temperatureCelsius = prompt("Введите температуру в градусах Цельсия");
-// temperatureFahrenheit = CelsiusToFahrenheit(temperatureCelsius);
-// alert(`Цельсия: ${temperatureCelsius}, Фаренгейт:\
-//  ${(temperatureFahrenheit).toFixed(1)}`)
 alert(`Цельсия: ${temperatureCelsius}, Фаренгейт:\
- ${(CelsiusToFahrenheit(temperatureCelsius)).toFixed(1)}`)
+ ${(celsiusToFahrenheit(temperatureCelsius)).toFixed(1)}`);
