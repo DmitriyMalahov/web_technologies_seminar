@@ -19,7 +19,8 @@ function CelsiusToFahrenheit(tempCelsius) {
 }
 
 const temperatureCelsius = prompt("Введите температуру в градусах Цельсия");
-temperatureFahrenheit = CelsiusToFahrenheit(temperatureCelsius);
-
+// temperatureFahrenheit = CelsiusToFahrenheit(temperatureCelsius);
+// alert(`Цельсия: ${temperatureCelsius}, Фаренгейт:\
+//  ${(temperatureFahrenheit).toFixed(1)}`)
 alert(`Цельсия: ${temperatureCelsius}, Фаренгейт:\
- ${(temperatureFahrenheit).toFixed(1)}`)
+ ${(CelsiusToFahrenheit(temperatureCelsius)).toFixed(1)}`)
